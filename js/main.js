@@ -4,7 +4,7 @@ $(document).ready(function () {
 	const header__menu = document.querySelector(".header__menu");
 	const header__close = document.querySelector(".header__close");
 
-	const menu_ = document.querySelector('.nav__list');
+	const menu_ = document.querySelector('.header');
 	const scrollspy = new VanillaScrollspy(menu_);
 	scrollspy.init();
 
@@ -274,10 +274,10 @@ $(document).ready(function () {
 
 	//Анимация
 
-	$('.advantage-card').hover(function () {
-		$('.advantage-card').removeClass('animated', 'pulse')
+	$('.header__advantages-image').hover(function () {
+		$('.header__advantages-image').removeClass('animated', 'pulse')
 	}, function () {
-		$('.advantage-card').addClass('animated', 'pulse')
+		$('.header__advantages-image').addClass('animated', 'pulse')
 	})
 
 	$('.shop-wrap').hover(function () {

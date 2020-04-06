@@ -187,6 +187,7 @@ a {
 .header__menu-icon {
   position: fixed;
   top: 23px;
+  z-index: 10;
 }
 
 .header__menu-icon:hover {
@@ -313,10 +314,6 @@ a {
   line-height: 27px;
   color: #E6E6E6;
   border: none;
-}
-
-.header__button:hover {
-  cursor: pointer;
 }
 
 .arcticmodal-overlay {
