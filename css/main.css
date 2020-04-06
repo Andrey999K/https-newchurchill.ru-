@@ -180,8 +180,7 @@ a {
 } */
 
 .header {
-  height: 100vh;
-  max-height: 800px;
+  height: 800px;
   padding: 183px 0;
   background: url(../img/main_img.webp) no-repeat center;
 }
