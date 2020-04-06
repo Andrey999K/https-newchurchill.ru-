@@ -205,7 +205,6 @@ a {
   justify-content: space-between;
   padding: 40px 154px 40px 120px;
   background: #FFFFFF;
-  opacity: 0.8;
   z-index: 10;
   transition: 0.5s cubic-bezier(.6, -.28, .735, .045)
 }
