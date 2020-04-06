@@ -1,5 +1,19 @@
 $(document).ready(function () {
 
+	const menu = document.querySelector(".header__menu-icon");
+	const header__menu = document.querySelector(".header__menu");
+	const header__close = document.querySelector(".header__close");
+
+	//ОТКРЫТИЕ МЕНЮ
+	menu.addEventListener("click", item => {
+		header__menu.classList.add("active");
+	});
+
+	//ЗАКРЫТИЕ МЕНЮ
+	header__close.addEventListener("click", item => {
+		header__menu.classList.remove("active");
+	});
+
 	$(function () {
 		$("a[data-target^='anchor']").click(function () {
 			var _href = $(this).attr("href");
@@ -86,7 +100,7 @@ $(document).ready(function () {
 	});
 	$('.btn_answer').click(function () {
 		$('.quiz-answer').fadeOut();
-		
+
 	});
 
 
@@ -110,7 +124,7 @@ $(document).ready(function () {
 		var value = $('input[name=calc-popup-price]:checked').val();
 		//Записываем выбранный вариант
 		if (value) {
-			
+
 			$('#calc-popup2').fadeIn();
 			$('#calc-popup2').css('display', 'flex');
 		}
@@ -236,14 +250,14 @@ $(document).ready(function () {
 					$('#result-calc3').css('display', 'none');
 					$('#result-calc2').css('display', 'none');
 					$('#result-calc1').css('display', 'none');
-				})
+				});
 			}
 		})
 	})
 
 
 	$('#no').click(function () {
-		
+
 		$('#sorry').fadeIn();
 		$('#sorry').css('display', 'flex');
 	})
@@ -251,31 +265,31 @@ $(document).ready(function () {
 	$('#returnModal').click(function () {
 		$('.arcticmodal-container').css('display', 'flex');
 		$('#sorry').fadeOut();
-		
+
 	})
 
 	//Анимация
 
-	$('.advantage-card').hover(function(){
-		$('.advantage-card').removeClass('animated', 'pulse')	
-	}, function(){
+	$('.advantage-card').hover(function () {
+		$('.advantage-card').removeClass('animated', 'pulse')
+	}, function () {
 		$('.advantage-card').addClass('animated', 'pulse')
 	})
 
-	$('.shop-wrap').hover(function(){
-		$('.shop-wrap').removeClass('animated', 'pulse')	
-	}, function(){
+	$('.shop-wrap').hover(function () {
+		$('.shop-wrap').removeClass('animated', 'pulse')
+	}, function () {
 		$('.shop-wrap').addClass('animated', 'pulse')
 	})
 
 	// Закрытие меню-гамбургера
-	$('#hmt').click(function(){
+	$('#hmt').click(function () {
 		if ($('#hmt').is(':checked')) {
 			document.body.style.overflow = 'hidden';
-		}else{
+		} else {
 			document.body.style.overflow = 'visible';
 		}
 	})
-	
-	
+
+
 });
