@@ -181,7 +181,7 @@ a {
 
 .header {
   padding: 183px 0;
-  background: url(../img/main_img.jpg) no-repeat center;
+  background: url(../img/main_img.webp) no-repeat center;
 }
 
 .header__menu-icon {
@@ -904,7 +904,7 @@ a {
 
 .offer {
   padding: 75px 0;
-  background: url(../img/devices-bg.jpg) fixed center center no-repeat;
+  background: url(../img/devices-bg.webp) fixed center center no-repeat;
   background-size: cover;
   color: #f3f3f3;
 }
@@ -1237,7 +1237,7 @@ a {
 }
 
 .devices {
-  background: url(../img/devices.jpg) top center no-repeat;
+  background: url(../img/devices.webp) top center no-repeat;
   background-size: cover;
   background-attachment: fixed;
   padding: 75px 0;
@@ -1485,7 +1485,7 @@ a {
 
 .quiz {
   padding: 75px 0;
-  background: url(../img/background-min.png) fixed center top no-repeat;
+  background: url(../img/background-min.webp) fixed center top no-repeat;
   background-size: cover;
 }
 
@@ -1872,7 +1872,7 @@ a {
 
 .garant {
   padding: 75px 0;
-  background: url(../img/garant-bg-min.png) fixed center top no-repeat;
+  background: url(../img/garant-bg-min.webp) fixed center top no-repeat;
   background-size: cover;
 }
 
