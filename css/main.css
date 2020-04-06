@@ -180,6 +180,8 @@ a {
 } */
 
 .header {
+  height: 100vh;
+  max-height: 800px;
   padding: 183px 0;
   background: url(../img/main_img.webp) no-repeat center;
 }
@@ -199,7 +201,8 @@ a {
   top: 0;
   left: -484px;
   width: 484px;
-  height: 800px;
+  height: 100vh;
+  max-height: 800px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -784,7 +787,7 @@ a {
 .features {
   background: #f9f9f9;
   padding: 85px 0 75px;
-  margin-top: -20px;
+  margin-top: 0;
 }
 
 .features-block {
@@ -2660,14 +2663,9 @@ a {
     vertical-align: middle;
   }
 
-
-
-
-
   .mobileMainImg {
     display: flex;
   }
-
 
   .advantage-card__img {
     max-width: 100%;
@@ -2693,8 +2691,6 @@ a {
     right: 0;
     width: 100%;
   }
-
-
 
   .btn {
     font-size: 12px;
@@ -2759,6 +2755,23 @@ a {
     margin-bottom: 10px;
   }
 
+  .features-block {
+    height: calc(147px * 6 + 140px);
+    padding: 70px 150px;
+    justify-content: space-between;
+  }
+
+  .features-block__item {
+    flex-direction: column;
+    height: initial;
+    padding: 20px 0;
+    justify-content: space-between;
+  }
+
+  .features-block__image {
+    margin: 0 auto 10px;
+  }
+
   .feature-card {
     -webkit-flex-basis: 100%;
     flex-basis: 100%;
@@ -2787,6 +2800,7 @@ a {
 
   .addiction-wrap {
     width: calc(100% - 30px);
+    height: calc(592px + 30px);
   }
 
   .addiction-wrap_fire {
@@ -3337,6 +3351,10 @@ a {
 
 @media (max-width: 650px) {
 
+  .header__advantages {
+    margin-bottom: 32px;
+  }
+
   .header__advantages-item {
     flex-direction: column;
   }
@@ -3352,6 +3370,19 @@ a {
   .header__button {
     display: block;
     margin: 0 auto;
+  }
+
+  .features-block {
+    padding: 30px 0;
+    justify-content: center;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .header__advantages-text {
+    max-width: 120px;
   }
 
 }
