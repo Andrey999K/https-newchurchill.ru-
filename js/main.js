@@ -4,9 +4,9 @@ $(document).ready(function () {
 	const header__menu = document.querySelector(".header__menu");
 	const header__close = document.querySelector(".header__close");
 
-	const menu_ = document.querySelector('.header');
-	const scrollspy = new VanillaScrollspy(menu_);
-	scrollspy.init();
+	// const menu_ = document.querySelector('.header');
+	// const scrollspy = new VanillaScrollspy(menu_);
+	// scrollspy.init();
 
 	//ОТКРЫТИЕ МЕНЮ
 	menu.addEventListener("click", item => {
