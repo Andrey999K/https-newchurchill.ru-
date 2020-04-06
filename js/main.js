@@ -4,6 +4,10 @@ $(document).ready(function () {
 	const header__menu = document.querySelector(".header__menu");
 	const header__close = document.querySelector(".header__close");
 
+	const menu_ = document.querySelector('.nav__list');
+	const scrollspy = new VanillaScrollspy(menu_);
+	scrollspy.init();
+
 	//ОТКРЫТИЕ МЕНЮ
 	menu.addEventListener("click", item => {
 		header__menu.classList.add("active");
