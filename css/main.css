@@ -1048,7 +1048,7 @@ a {
 .reasons {
   padding: 100px;
   position: relative;
-  background: url(../img/benifit-bg-min.png) center center no-repeat;
+  background: url(../img/benifit-bg-min.webp) center center no-repeat;
 }
 
 .reasons-wrap {
@@ -1484,7 +1484,7 @@ a {
 
 .quiz {
   padding: 75px 0;
-  background: url(../img/background-min.png) fixed center top no-repeat;
+  background: url(../img/background-min.webp) fixed center top no-repeat;
   background-size: cover;
 }
 
@@ -1871,7 +1871,7 @@ a {
 
 .garant {
   padding: 75px 0;
-  background: url(../img/garant-bg-min.png) fixed center top no-repeat;
+  background: url(../img/garant-bg-min.webp) fixed center top no-repeat;
   background-size: cover;
 }
 
