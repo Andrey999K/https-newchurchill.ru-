@@ -3,10 +3,15 @@ $(document).ready(function () {
 	const menu = document.querySelector(".header__menu-icon");
 	const header__menu = document.querySelector(".header__menu");
 	const header__close = document.querySelector(".header__close");
+	let nav_link = document.querySelectorAll(".nav__list-item-link");
+	console.log(nav_link);
 
-	// const menu_ = document.querySelector('.header');
-	// const scrollspy = new VanillaScrollspy(menu_);
-	// scrollspy.init();
+	nav_link.forEach(item => {
+		item.addEventListener("click", element => {
+			header__menu.classList.remove("active");
+		});
+	});
+
 
 	//ОТКРЫТИЕ МЕНЮ
 	menu.addEventListener("click", item => {
