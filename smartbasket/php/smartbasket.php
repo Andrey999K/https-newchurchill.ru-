@@ -3,8 +3,9 @@
 // ini_set('error_reporting', E_ALL);
 // ini_set('display_errors', 1);
 // ini_set('display_startup_errors', 1);
-use PHPMailer\PHPMailer\PHPMailer;
-require_once($_SERVER['DOCUMENT_ROOT'] . '/smartbasket/php/config.php');
+require_once('phpmailer/PHPMailerAutoload.php');
+// use PHPMailer\PHPMailer\PHPMailer;
+require_once('config.php');
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -25,13 +26,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		// 	}
         // }
         if (isset($_POST['name'])) {
-            $name = "<b>Имя: </b>" . strip_tags($_POST['userName']) . "<br>";
+            $name = "<b>Имя: </b><br>" . strip_tags($_POST['name']) . "<br>";
         }
         if (isset($_POST['email'])) {
-            $mail_user = "<b>E-mail: </b>" . strip_tags($_POST['userTel']) . "<br>";
+            $mail_user = "<b>E-mail: </b><br>" . strip_tags($_POST['email']) . "<br>";
         }
         if (isset($_POST['phone'])) {
-            $tel = "<b>Телефон: </b>" . strip_tags($_POST['userTel']) . "<br>";
+            $tel = "<b>Телефон: </b><br>" . strip_tags($_POST['phone']) . "<br>";
         }
 
 		// $productArr=[];
@@ -40,7 +41,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$bodyHeader = '<table border="0" cellpadding="0" cellspacing="0" style="border-bottom:1px; border-right:1px; border-color:#e2e2e2; border-style: solid; width:600px" width="600" align="center">
 			<tr >
 				<th colspan="3" style="width: 300px; padding-top:15px; padding-bottom:15px; padding-right:15px; padding-left:15px; text-align:center; border-top:1px; border-left:1px; border-right:0; border-bottom:0; border-color:#e2e2e2; border-style: solid;">' . $name . '</th>
-				<th colspan="3" style="width: 300px; padding-top:15px; padding-bottom:15px; padding-right:15px; padding-left:15px; text-align:center; border-top:1px; border-left:1px; border-right:0; border-bottom:0; border-color:#e2e2e2; border-style: solid;">' . $tel . '</th>
+                <th colspan="3" style="width: 300px; padding-top:15px; padding-bottom:15px; padding-right:15px; padding-left:15px; text-align:center; border-top:1px; border-left:1px; border-right:0; border-bottom:0; border-color:#e2e2e2; border-style: solid;">' . $mail_user . '</th>
+                <th colspan="3" style="width: 300px; padding-top:15px; padding-bottom:15px; padding-right:15px; padding-left:15px; text-align:center; border-top:1px; border-left:1px; border-right:0; border-bottom:0; border-color:#e2e2e2; border-style: solid;">' . $tel . '</th>
 			</tr>';
 
 		// foreach ($_POST as $key =>  $value) {
