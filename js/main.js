@@ -17,7 +17,7 @@ $(document).ready(function () {
     //     event.preventDefault();
     // });
 
-    $('input[name="phone"]').mask("+7 (999) 999-99-99");
+    // $('input[name="phone"]').mask("+7 (999) 999-99-99");
 
     //ОТКРЫТИЕ МЕНЮ
     menu.addEventListener("click", item => {

@@ -117,8 +117,7 @@ button {
 .wrapper {
     max-width: 1230px;
     margin: 0 auto;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 120px 30px;
 }
 
 body {
@@ -164,11 +163,11 @@ a {
 .section-title {
     text-align: center;
     color: #0D0D0D;
-    margin: 120px auto 70px;
+    margin: 0 auto 70px;
 }
 
 .section-title_white {
-    color: #f3f3f3;
+    color: #ffffff;
 }
 
 .section-title__title {
@@ -195,8 +194,11 @@ a {
 
 .header {
     height: 800px;
-    padding: 183px 0;
     background: url(../img/main_img.png) no-repeat fixed center top;
+}
+
+.header .wrapper {
+    padding: 160px 30px;
 }
 
 .header__menu-icon {
@@ -284,16 +286,16 @@ a {
 .header__title {
     color: #FFFFFF;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 60px;
     line-height: 120%;
-    margin-bottom: 23px;
+    margin-bottom: 24px;
 }
 
 .header__text {
     color: #FFFFFF;
-    font-size: 20px;
-    line-height: 27px;
-    margin-bottom: 53px;
+    font-size: 30px;
+    line-height: 41px;
+    margin-bottom: 62px;
 }
 
 .header__advantages {
@@ -705,7 +707,7 @@ a {
 }
 
 .btn_result {
-    padding: 10px 25px;
+    padding: 22px 62px;
 }
 
 .btn_act {
@@ -774,10 +776,8 @@ a {
 }
 
 .btn_answer {
-    width: 230px;
     display: block;
     margin: 0 auto;
-    padding: 10px 0;
     cursor: pointer;
 }
 
@@ -795,15 +795,8 @@ a {
     padding: 10px 0;
 }
 
-
-
-.features {
-    padding-bottom: 120px;
-    margin-top: 0;
-}
-
-.features .section-title:first-child {
-    margin-top: 0;
+.features .wrapper {
+    padding-top: 0;
 }
 
 .features-block {
@@ -811,8 +804,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
-    padding: 120px 0;
-    height: 430px;
+    height: 190px;
 }
 
 .features-block__item {
@@ -885,6 +877,7 @@ a {
 .addiction-wrap:first-child {
     margin-right: 208px;
     height: 420px;
+    margin-bottom: 120px;
 }
 
 .addiction__text {
@@ -949,7 +942,7 @@ a {
     justify-content: space-between;
     max-width: 1149px;
     width: 100%;
-    margin: 50px auto;
+    margin: 0 auto 50px;
 }
 
 .shop__block {
@@ -1046,6 +1039,7 @@ a {
 }
 
 .offer__button {
+    display: inline-block;
     padding: 22px 70px;
     color: #FFFFFF;
     font-weight: bold;
@@ -1153,9 +1147,14 @@ a {
 }
 
 .reasons {
-    padding: 100px;
     position: relative;
-    background: url(../img/benifit-bg-min.webp) center center no-repeat;
+    background: url(../img/benifit-bg-min.png) center center no-repeat;
+    margin-top: -120px;
+}
+
+.reasons .wrapper {
+    max-width: 830px;
+    padding: 151px 30px 129px;
 }
 
 .reasons-wrap {
@@ -1178,9 +1177,8 @@ a {
 .reason-card {
     z-index: 5;
     position: relative;
-    margin: 0 30px;
-    width: 220px;
-    height: 220px;
+    width: 170px;
+    height: 152px;
     display: -webkit-box;
     display: -webkit-flex;
     display: flex;
@@ -1190,17 +1188,16 @@ a {
 }
 
 .reason-card-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     z-index: 3;
     border-radius: 5px;
     width: 100%;
-    padding: 30px 0;
+    padding: 31px 24px;
     background: #f6f6f6;
     -webkit-transition: 0.4s ease;
     transition: 0.4s ease;
-}
-
-.reason-card__img {
-    padding-top: 20px;
 }
 
 .reason-card__img-wrap {
@@ -1214,12 +1211,11 @@ a {
 }
 
 .reason-card__title {
-    font-size: 18px;
-    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 27px;
     text-align: center;
     margin-top: auto;
-    color: #383127;
-    padding-top: 18px;
+    color: #2D2D2D;
 }
 
 .reason-card:hover .reason-card-wrap {
@@ -1228,19 +1224,62 @@ a {
     transform: scale(1.1);
 }
 
-.simple {
-    margin-top: -30px;
-    padding: 75px 0;
+.simple .wrapper {
+    max-width: 1030px;
 }
 
-.stages {
-    margin-top: 70px;
+.simple__stage {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.simple__stage:last-child {
+    margin-bottom: 0;
+}
+
+.simple__stage-info {
+    display: flex;
+}
+
+.simple__stage-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    margin-right: 30px;
+    font-weight: 300;
+    font-size: 40px;
+    color: #77D586;
+    border-radius: 50%;
+    border: 1px solid #77D586;
+}
+
+.simple__stage-description {
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+}
+
+.simple__stage-name {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120%;
+    margin-bottom: 14px;
+}
+
+.simple__stage-text {
+    font-size: 20px;
+    line-height: 140%;
+    max-width: 570px;
 }
 
 .stage-card {
     display: -webkit-box;
     display: -webkit-flex;
     display: flex;
+    justify-content: space-between;
     -webkit-box-align: center;
     -webkit-align-items: center;
     align-items: center;
@@ -1590,8 +1629,7 @@ a {
 
 
 .quiz {
-    padding: 75px 0;
-    background: url(../img/background-min.webp) fixed center top no-repeat;
+    background: url(../img/quiz-background.jpg) fixed center top no-repeat;
     background-size: cover;
 }
 
@@ -1624,21 +1662,22 @@ a {
 }
 
 .quiz-card {
-    background: #fafafa;
-    display: block;
-    max-width: 780px;
-    margin: 10px auto;
-    padding: 20px 125px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 78px 140px;
+    max-width: 570px;
+    margin: 0 auto;
     box-sizing: border-box;
-    border-radius: 5px;
     position: relative;
 }
 
 .quiz-card__title {
-    font-size: 20px;
-    font-weight: 700;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 40px;
     text-align: center;
-    margin-bottom: 60px;
+    color: #000000;
 }
 
 .quiz-card-wrap {
@@ -1648,31 +1687,29 @@ a {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+    max-width: 280px;
+    margin: 0 auto;
 }
 
 .quiz-card__check {
-    color: #383127;
+    color: #000000;
     cursor: pointer;
     position: relative;
-    margin-right: 25px;
     display: block;
-    margin-bottom: 40px;
-    margin-left: 35px;
+    margin: 0 0 20px 37px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 120%;
 }
 
 .quiz-card__check:before {
     position: absolute;
-    top: 4px;
-    left: -25px;
+    top: -5px;
+    left: -40px;
     content: '';
     display: block;
-    width: 11px;
-    height: 11px;
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
     border: 2px solid #000;
 }
@@ -1684,8 +1721,8 @@ a {
     display: block;
     background: #000;
     content: '';
-    top: 9px;
-    left: -20px;
+    top: 7px;
+    left: -28px;
     border-radius: 50%;
     display: none;
 }
@@ -1737,10 +1774,18 @@ a {
 }
 
 .try {
-    background: url(../img/devices.webp) top center no-repeat;
+    background: url(../img/form-background.jpg) top center no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    padding: 63px 50px 166px;
+}
+
+.try__text {
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 120%;
+    margin-bottom: 39px;
 }
 
 .try__content {
@@ -1757,7 +1802,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 79px auto 0;
+    margin: 0 auto;
     max-width: 370px;
     width: 100%;
 }
@@ -1783,8 +1828,8 @@ a {
     padding: 22px 48px;
 }
 
-.comments {
-    padding: 75px 0;
+.comments .wrapper {
+    max-width: 1097px;
 }
 
 .comments-slider {
@@ -1810,6 +1855,7 @@ a {
     transition: 0.3s ease;
     color: #fff;
     text-shadow: #000 0 0 4px;
+    padding: 0;
 }
 
 .comments-slider-arrow:hover {
@@ -1821,16 +1867,21 @@ a {
 }
 
 .comments-slider-arrow-prev {
-    left: 0;
+    left: 37px;
+}
+
+.comments-slider-arrow i {
+    color: #77D586;
 }
 
 .comments-card {
-    max-width: 780px;
+    border: 1px solid #77D586;
+    border-radius: 8px;
+    max-width: 970px;
+    min-height: 378px;
     margin: 0 auto;
-    border: 1px dashed #000;
-    border-radius: 5px;
     position: relative;
-    padding: 45px;
+    padding: 50px 60px;
     display: -webkit-box;
     display: -webkit-flex;
     display: flex;
@@ -1860,11 +1911,12 @@ a {
 }
 
 .comments-card__review {
+    font-size: 20px;
+    line-height: 140%;
     display: block;
     -webkit-flex-basis: 75%;
     flex-basis: 75%;
-    line-height: 20px;
-    letter-spacing: 0.4px;
+    color: #000000;
 }
 
 .comments-card__review a {
@@ -3073,10 +3125,6 @@ a {
 
     .reason-card:last-child {
         margin-bottom: 0;
-    }
-
-    .stages {
-        margin-top: 0;
     }
 
     .simple .section-title {
