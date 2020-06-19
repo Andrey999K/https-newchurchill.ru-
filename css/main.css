@@ -1876,38 +1876,38 @@ a {
     min-height: 378px;
     margin: 0 auto;
     position: relative;
-    padding: 50px 60px;
+    padding: 50px;
     display: -webkit-box;
     display: -webkit-flex;
     display: flex;
     -webkit-box-align: center;
     -webkit-align-items: center;
+    /* -webkit-justify-content: space-between;
+    justify-content: space-between; */
     align-items: center;
 }
 
 .comments-card__author {
     position: relative;
-    -webkit-flex-basis: 25%;
-    flex-basis: 25%;
-    padding-right: 20px;
-}
-
-.comments-card__title {
-    font-size: 15px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-top: 25px;
+    padding-right: 80px;
     text-align: center;
-
+    width: 247px;
 }
 
 .comments-card__avatar {
-    margin-left: 14px;
+    margin-bottom: 20px;
+}
+
+.comments-card__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120%;
 }
 
 .comments-card__review {
     font-size: 20px;
     line-height: 140%;
+    max-width: 617px;
     display: block;
     -webkit-flex-basis: 75%;
     flex-basis: 75%;
@@ -1918,16 +1918,9 @@ a {
     cursor: pointer;
 }
 
-.comments-card__like {
-
-    bottom: 20px;
-    right: 20px;
-    position: absolute;
-}
-
 .comments-card__social {
-    top: -5%;
-    right: 20%;
+    top: 0;
+    right: 103px;
     position: absolute;
     display: block;
     background: #1976d2;
@@ -1956,13 +1949,13 @@ a {
     -webkit-align-items: center;
     align-items: center;
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
     display: -webkit-box;
     display: -webkit-flex;
     display: flex;
     position: absolute;
-    width: 300px;
+    width: 132px;
     text-align: center;
     left: 50%;
     bottom: -48px;
@@ -2008,7 +2001,7 @@ a {
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 270px;
+    max-width: 258px;
 }
 
 .order__step-icon {
@@ -2028,6 +2021,10 @@ a {
     font-size: 12px;
     line-height: 120%;
     text-align: center;
+}
+
+.order .btn-wrap {
+    margin-bottom: 14px;
 }
 
 .for-you {
@@ -2068,15 +2065,14 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
-    height: 440px;
-    margin-bottom: 70px;
 }
 
 .for-you__advantage {
     display: flex;
     align-items: flex-start;
-    width: 370px;
-    height: 213px;
+    width: 100%;
+    max-width: 370px;
+    margin-bottom: 70px;
 }
 
 .for-you__images {
@@ -2207,18 +2203,26 @@ a {
 }
 
 .contacts .section-title {
+    max-width: 300px;
     text-align: left;
-    margin-bottom: 50px;
+    margin: 0 0 50px;
 }
 
 .contacts__block {
     display: flex;
     justify-content: flex-end;
+    height: 782px;
+}
+
+.contacts__map {
+    width: 100%;
+    max-width: 50%;
 }
 
 .contacts__addresses {
-    padding: 189px 0 0 30px;
-    margin-right: 48px;
+    margin: auto 48px auto 0;
+    padding-left: 30px;
+    max-width: calc(50% - 48px);
 }
 
 .contacts__list-item {
@@ -3058,10 +3062,6 @@ a {
         margin: 15px auto;
     }
 
-    #btnForYou {
-        margin-top: 50px;
-    }
-
     .btn-wrap_quiz {
 
         margin-bottom: 20px;
@@ -3256,6 +3256,10 @@ a {
         margin-top: 2px;
     }
 
+    .comments .wrapper {
+        max-width: 657px;
+    }
+
     .comments-slider-arrow-next {
         right: -30px;
     }
@@ -3278,43 +3282,30 @@ a {
     }
 
     .comments-card {
-        padding-bottom: 70px;
+        padding: 40px 30px 85px;
+        min-height: 682px;
     }
 
     .comments-card__author {
         padding-right: 0;
-    }
-
-    .comments-card__title {
-        margin-bottom: 20px;
-        margin-top: 10px;
-
-    }
-
-    .comments-card__title {
-        font-size: 15px;
-
-    }
-
-    .comments-card__avatar {
-        padding-left: 12px;
-        margin: 0 auto;
+        width: 167px;
+        margin-bottom: 50px;
     }
 
     .comments-card__social {
-        right: 15%;
+        right: 23px;
     }
 
-    .comments-card__social {
-        top: -5%;
+    .order__steps {
+        flex-wrap: wrap;
+        margin-bottom: 0;
     }
 
-    .comments-card__like {
-        position: absolute;
-        bottom: 25px;
+    .order__step {
+        margin-bottom: 70px;
     }
 
-    .for-you-card {
+    /* .for-you-card {
         -webkit-flex-basis: 100%;
         flex-basis: 100%;
     }
@@ -3325,27 +3316,26 @@ a {
 
     .for-you-card {
         margin: 40px auto 0;
+    } */
+
+    .for-you .section-title {
+        max-width: 453px;
+    }
+
+    .for-you .wrapper {
+        max-width: 770px;
+    }
+
+    .for-you__advantage {
+        max-width: 330px;
     }
 
     .spending-wrap {
-        margin-left: -15px;
-        margin-right: -15px;
-    }
-
-    .spending-wrap {
-        margin-top: 30px;
-    }
-
-    .spending-card {
-        margin-left: 15px;
-        margin-right: 15px;
+        justify-content: center;
     }
 
     .spending-card {
         width: calc(100% - 30px);
-    }
-
-    .spending-card {
         margin-bottom: 30px;
     }
 
@@ -3391,6 +3381,27 @@ a {
         font-size: 13px;
     }
 
+    .contacts .section-title {
+        max-width: 100%;
+    }
+
+    .contacts__block {
+        display: flex;
+        flex-direction: column;
+        height: initial;
+    }
+
+    .contacts__addresses {
+        max-width: 100%;
+        padding: 120px 88px 70px;
+        margin: 0;
+    }
+
+    .contacts__map {
+        max-width: 100%;
+        height: 400px;
+    }
+
     .contact-form {
         right: -50%;
     }
@@ -3408,16 +3419,22 @@ a {
     }
 
     .footer-wrap {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        flex-direction: column;
-        padding-bottom: 6%;
-
+        flex-wrap: wrap;
     }
 
     .footer__icon {
         margin: 15px 10px;
+    }
+
+    .legacy {
+        width: 150px;
+    }
+
+    .name {
+        max-width: 600px;
+        margin: 30px auto 0;
+        text-align: center;
+        order: 1;
     }
 
     .redirect-popup__wrap {
