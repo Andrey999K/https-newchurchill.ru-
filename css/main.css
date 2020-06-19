@@ -3093,12 +3093,17 @@ a {
         margin-bottom: 10px;
     }
 
+    .addiction:nth-child(2) {
+        margin-bottom: 120px;
+    }
+
     .addiction-wrap {
         margin-bottom: 70px;
     }
 
     .addiction-wrap:first-child {
         margin-right: 0;
+        margin-bottom: 70px;
     }
 
     .addiction-wrap_fire {
@@ -3107,10 +3112,6 @@ a {
 
     .addiction__img {
         margin: 0 auto;
-    }
-
-    .addiction__img_right {
-        margin-bottom: 120px;
     }
 
     .addiction__img_left {
