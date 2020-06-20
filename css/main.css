@@ -105,11 +105,6 @@ main {
     display: block;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 button {
     outline: none;
 }
@@ -369,6 +364,7 @@ a {
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
     color: #fff;
     font-size: 15px;
@@ -589,7 +585,9 @@ a {
     top: 6px;
 }
 
-
+.advantages .wrapper {
+    padding-bottom: 70px;
+}
 
 .btn {
     box-sizing: border-box;
@@ -800,7 +798,6 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
-    height: 190px;
 }
 
 .features-block__item {
@@ -808,6 +805,7 @@ a {
     align-items: center;
     width: 370px;
     height: 70px;
+    margin-bottom: 50px;
 }
 
 .features-block__image {
@@ -867,19 +865,21 @@ a {
     flex-direction: column;
     justify-content: space-between;
     max-width: 568px;
-    height: 396px;
 }
 
 .addiction-wrap:first-child {
     margin-right: 208px;
-    height: 420px;
-    margin-bottom: 120px;
+    margin-bottom: 56px;
 }
 
 .addiction__text {
     font-size: 20px;
     line-height: 140%;
     color: #2D2D2D;
+}
+
+.addiction__text:not(:last-child) {
+    margin-bottom: 15px;
 }
 
 .addiction__img {
@@ -1078,6 +1078,7 @@ a {
 
 .shop__title {
     display: flex;
+    -webkit-justify-content: center;
     justify-content: center;
     align-items: center;
     font-size: 36px;
@@ -1239,6 +1240,7 @@ a {
 
 .simple__stage-number {
     display: flex;
+    -webkit-justify-content: center;
     justify-content: center;
     align-items: center;
     width: 70px;
@@ -1835,6 +1837,10 @@ a {
     position: relative;
 }
 
+.comments-slider-item {
+    height: 100%;
+}
+
 .comments-slider-arrow {
     position: absolute;
     top: 50%;
@@ -2015,6 +2021,7 @@ a {
     width: 100%;
     font-size: 20px;
     line-height: 120%;
+    font-weight: 300;
 }
 
 .order__small-text {
@@ -2374,12 +2381,8 @@ a {
 }
 
 .footer .wrapper {
-    padding: 55px 30px;
+    padding: 100px 30px;
     max-width: 1170px;
-}
-
-.footer__logo {
-    width: 170px;
 }
 
 .footer-wrap {
@@ -2392,6 +2395,12 @@ a {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__logo {
+    width: 220px;
+    padding-right: 50px;
 }
 
 .name {
@@ -2875,10 +2884,6 @@ a {
         padding-bottom: 60px;
     }
 
-    .features-block {
-        height: 308px;
-    }
-
     .features-block__item {
         width: 270px;
     }
@@ -3185,6 +3190,7 @@ a {
 
     .simple__stage {
         flex-wrap: wrap;
+        -webkit-justify-content: center;
         justify-content: center;
     }
 
@@ -3332,6 +3338,7 @@ a {
     }
 
     .spending-wrap {
+        -webkit-justify-content: center;
         justify-content: center;
     }
 
@@ -3417,10 +3424,6 @@ a {
 
     .form-btn {
         display: block;
-    }
-
-    .footer-wrap {
-        flex-wrap: wrap;
     }
 
     .footer__icon {
@@ -3513,6 +3516,18 @@ a {
     padding-top: 20px
 }
 
+@media (max-width: 740px) {
+
+    .for-you__advantages {
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+
+    .for-you__advantage {
+        max-width: 400px;
+    }
+}
+
 @media (max-width: 650px) {
 
     .header__advantages {
@@ -3537,8 +3552,23 @@ a {
     }
 
     .features-block {
-        padding: 30px 0;
+        -webkit-justify-content: center;
         justify-content: center;
+    }
+
+    .reasons-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reasons {
+        background:
+            url(../img/benifit-bg-min.png-320-part1.png) center left no-repeat,
+            url(../img/benifit-bg-min.png-320-part2.png) center right no-repeat;
+    }
+
+    .reason-card:not(:last-child) {
+        margin-bottom: 70px;
     }
 
     .shop__description,
@@ -3546,6 +3576,26 @@ a {
         font-size: 14px;
     }
 
+}
+
+@media (max-width: 600px) {
+
+    .quiz-card__title {
+        max-width: 280px;
+        margin: 0 auto 40px;
+    }
+
+    .quiz-card {
+        padding: 50px 30px;
+    }
+
+    .comments-card {
+        padding: 50px 25px;
+    }
+
+    .order__steps {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 500px) {
