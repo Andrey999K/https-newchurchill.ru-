@@ -873,7 +873,7 @@ a {
 }
 
 .addiction-wrap_fire .addiction__text {
-    margin-bottom: 70px;
+    margin-bottom: 70px !important;
 }
 
 .addiction__text {
@@ -1153,6 +1153,7 @@ a {
 .reasons {
     position: relative;
     background: url(../img/benifit-bg-min.png) center center no-repeat;
+    /* padding: 0 calc((100% - 652px) * 0.2645); */
 }
 
 .reasons .wrapper {
@@ -2865,6 +2866,36 @@ a {
 
 @media (max-width: 1280px) {
 
+    .addiction {
+        max-width: 650px;
+        margin: 0 auto 64px;
+    }
+
+    .addiction-wrap:first-child {
+        margin-right: 0;
+    }
+
+    .addiction__img {
+        margin: 0 auto;
+    }
+
+    .addiction__img_left {
+        order: 1;
+    }
+
+    .addiction-wrap_fire {
+        margin-bottom: 52px;
+    }
+
+    .features-block {
+        max-width: 860px;
+        margin: 0 auto;
+    }
+
+    .features-block__item {
+        max-width: 270px;
+    }
+
     .shop {
         flex-direction: column;
         align-items: center;
@@ -2876,6 +2907,45 @@ a {
 
     .shop__devices::after {
         display: none;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    .features-block {
+        max-width: 650px;
+    }
+
+    .features-block__item {
+        max-width: 270px;
+    }
+
+    .reasons .wrapper {
+        max-width: 660px;
+    }
+
+    .simple .wrapper {
+        max-width: 100%;
+    }
+
+    .simple__info {
+        max-width: 688px;
+        margin: 0 auto;
+    }
+
+    .simple__stage {
+        flex-wrap: wrap;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+
+    .simple__stage-info {
+        margin: 0 auto 40px;
+    }
+
+    .simple__images {
+        order: 1;
     }
 
 }
@@ -3152,18 +3222,6 @@ a {
         margin-top: 0;
     }
 
-    .addiction__img {
-        margin: 0 auto;
-    }
-
-    .addiction__img_left {
-        order: 1;
-    }
-
-    .addiction-wrap_fire {
-        margin-bottom: 52px;
-    }
-
     .offer__button {
         margin-bottom: 29px;
     }
@@ -3213,30 +3271,11 @@ a {
     }
 
     .reasons .wrapper {
-        max-width: 100%;
         padding: 115px 35px;
     }
 
     .reason-card:last-child {
         margin-bottom: 0;
-    }
-
-    .simple .wrapper {
-        max-width: 100%;
-    }
-
-    .simple__stage {
-        flex-wrap: wrap;
-        -webkit-justify-content: center;
-        justify-content: center;
-    }
-
-    .simple__stage-info {
-        margin: 0 auto 40px;
-    }
-
-    .simple__images {
-        order: 1;
     }
 
     .dcard {
@@ -3785,6 +3824,7 @@ a {
     .shop__advantage {
         width: 100%;
         max-width: initial;
+        padding: 13px 27px;
     }
 
     .shop__advantage:first-child {
@@ -3846,6 +3886,10 @@ a {
     .offer__button {
         padding: 22px 0;
         width: 100%;
+    }
+
+    .simple__stage-number {
+        margin-right: 15px;
     }
 
     .quiz-card__title {
