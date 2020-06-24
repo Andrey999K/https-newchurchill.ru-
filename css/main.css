@@ -624,7 +624,7 @@ a {
 
 .btn-wrap_result {
     cursor: pointer;
-    margin: 20px 0 10px;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -728,10 +728,6 @@ a {
     background: transparent;
 }
 
-.btn_spending {
-    margin-top: 35px;
-}
-
 .btn_more {
     padding: 16px 30px;
     color: #f3f3f3;
@@ -784,10 +780,8 @@ a {
 }
 
 .btn_sale {
-    width: 250px;
     display: block;
     margin: 0 auto;
-    padding: 10px 0;
 }
 
 .features .wrapper {
@@ -926,6 +920,7 @@ a {
     background-size: cover;
     color: #f3f3f3;
     text-align: center;
+    padding-bottom: 86px;
 }
 
 .offer .wrapper {
@@ -941,7 +936,7 @@ a {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     justify-content: space-between;
-    max-width: 1149px;
+    max-width: 1168px;
     width: 100%;
     margin: 0 auto 50px;
 }
@@ -1681,13 +1676,25 @@ a {
     position: relative;
 }
 
-.quiz-card__title {
+.quiz-card__title,
+.quiz-answer__title,
+.calc-popup__title {
     font-weight: bold;
     font-size: 24px;
     line-height: 33px;
     margin-bottom: 40px;
     text-align: center;
     color: #000000;
+}
+
+.quiz-answer__title {
+    margin-bottom: 50px;
+    line-height: 1;
+}
+
+.calc-popup__title {
+    margin-bottom: 0;
+    line-height: 1;
 }
 
 .quiz-card-wrap {
@@ -1698,10 +1705,11 @@ a {
     -webkit-justify-content: space-between;
     justify-content: space-between;
     max-width: 280px;
-    margin: 0 auto;
+    margin: 0 auto 40px;
 }
 
-.quiz-card__check {
+.quiz-card__check,
+.calc-popup__label {
     color: #000000;
     cursor: pointer;
     position: relative;
@@ -1712,7 +1720,13 @@ a {
     line-height: 120%;
 }
 
-.quiz-card__check:before {
+.quiz-card__check:last-child,
+.calc-popup__label:last-child {
+    margin-bottom: 0;
+}
+
+.quiz-card__check:before,
+.calc-popup__label:before {
     position: absolute;
     top: -5px;
     left: -40px;
@@ -1724,7 +1738,8 @@ a {
     border: 2px solid #000;
 }
 
-.quiz-card__check:after {
+.quiz-card__check:after,
+.calc-popup__label:after {
     position: absolute;
     width: 5px;
     height: 5px;
@@ -1742,10 +1757,10 @@ a {
 }
 
 .quiz-answer {
-    padding: 20px 125px;
+    padding: 78px 140px;
     box-sizing: border-box;
     z-index: 10;
-    background: #fff;
+    background: #FFFFFF;
     text-align: center;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1754,25 +1769,20 @@ a {
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
     width: 100%;
     height: 100%;
+    border-radius: 8px;
+    max-width: 570px;
+    margin: 0 auto;
     position: absolute;
     top: 0;
     left: 0;
     display: none;
 }
 
-.quiz-answer__title {
-    font-size: 20px;
-    font-weight: 700;
-}
-
 .quiz-answer__description {
     font-size: 16px;
-
+    margin-bottom: 50px;
 }
 
 .quiz-answer__mark {
@@ -1852,6 +1862,7 @@ a {
 
 .comments-slider-item {
     height: 100%;
+    padding: 0 64px;
 }
 
 .comments-slider-arrow {
@@ -1975,14 +1986,9 @@ a {
     display: -webkit-box;
     display: -webkit-flex;
     display: flex;
-    position: absolute;
     width: 132px;
     text-align: center;
-    left: 50%;
-    bottom: -48px;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
+    margin: 0 auto;
 }
 
 .slick-dots button {
@@ -2137,6 +2143,7 @@ a {
     flex-wrap: wrap;
     -webkit-justify-content: space-between;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .spending-card {
@@ -2761,17 +2768,18 @@ a {
 .calc-popupSecond,
 .calc-popupFinal {
     z-index: 11000;
-    width: 780px;
-    max-width: 100%;
-    background: #fff;
+    max-width: 570px;
+    width: 100%;
+    height: 410px;
+    background: #FFFFFF;
 
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
     top: 30%;
 
-    height: 300px;
-    padding: 20px 120px;
+    padding: 78px 110px;
+    border-radius: 8px;
 
     text-align: center;
     display: -webkit-box;
@@ -2788,15 +2796,9 @@ a {
     -webkit-align-items: center;
     align-items: center;
     display: none;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
-
-.calc-popup__title {
-    font-size: 19px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-
 
 .calc-popup-wrap {
     display: -webkit-box;
@@ -2810,39 +2812,6 @@ a {
 }
 
 .calc-popup__radio {
-    display: none;
-}
-
-.calc-popup__label {
-    font-size: 18px;
-    position: relative;
-    display: block;
-    margin: 15px 0;
-    cursor: pointer;
-}
-
-.calc-popup__label:before {
-    position: absolute;
-    top: 4px;
-    left: -25px;
-    content: '';
-    display: block;
-    width: 11px;
-    height: 11px;
-    border-radius: 50%;
-    border: 2px solid #000;
-}
-
-.calc-popup__label:after {
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    display: block;
-    background: #000;
-    content: '';
-    top: 9px;
-    left: -20px;
-    border-radius: 50%;
     display: none;
 }
 
@@ -2910,6 +2879,60 @@ a {
         display: none;
     }
 
+    .for-you .wrapper {
+        max-width: 900px;
+    }
+
+    .for-you__advantage {
+        max-width: 400px;
+    }
+
+}
+
+@media (max-width: 1160px) {
+
+    .comments-card {
+        min-height: 750px;
+    }
+
+    .comments-card {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .comments-card {
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .comments-card {
+        padding: 40px 30px 85px;
+        min-height: 682px;
+    }
+
+    .comments-card__author {
+        padding-right: 0;
+        width: 167px;
+        margin-bottom: 50px;
+    }
+
+    .comments-card__social {
+        right: 23px;
+    }
+
+    .order__steps {
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        max-width: 570px;
+        margin: 0 auto;
+    }
+
+    .order__step {
+        margin-bottom: 70px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -2924,6 +2947,18 @@ a {
 
     .reasons .wrapper {
         max-width: 660px;
+    }
+
+    .for-you .wrapper {
+        max-width: 770px;
+    }
+
+    .for-you .section-title {
+        max-width: 453px;
+    }
+
+    .for-you__advantage {
+        max-width: 330px;
     }
 
     .simple .wrapper {
@@ -2947,6 +2982,18 @@ a {
 
     .simple__images {
         order: 1;
+    }
+
+    .spending-wrap {
+        -webkit-justify-content: center;
+        justify-content: center;
+        max-width: 470px;
+        margin: 0 auto;
+    }
+
+    .spending-card {
+        width: calc(100% - 30px);
+        margin-bottom: 30px;
     }
 
     .footer-wrap {
@@ -3263,15 +3310,6 @@ a {
         margin-bottom: 20px;
     }
 
-    /* .shop__description {
-        padding-top: 25%;
-    } */
-
-    /* .shop__description {
-        font-size: 12px;
-        font-size: 3.4vw;
-    } */
-
     .shop-feature-wrap {
         margin-left: -15px;
         margin-right: -15px;
@@ -3359,92 +3397,20 @@ a {
         margin-top: 2px;
     }
 
+    .quiz {
+        background: url(../img/quiz-background-768.jpg) no-repeat fixed center/cover;
+    }
+
     .comments .wrapper {
         max-width: 657px;
     }
 
-    .comments-slider-arrow-next {
-        right: -30px;
-    }
-
-    .comments-slider-arrow-prev {
-        left: -30px;
-    }
-
     .comments-card {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        flex-direction: column;
-    }
-
-    .comments-card {
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-    }
-
-    .comments-card {
-        padding: 40px 30px 85px;
-        min-height: 682px;
-    }
-
-    .comments-card__author {
-        padding-right: 0;
-        width: 167px;
-        margin-bottom: 50px;
-    }
-
-    .comments-card__social {
-        right: 23px;
+        min-height: 822px;
     }
 
     .order {
         background: url(../img/order-background-mobile.jpg) no-repeat center/cover;
-    }
-
-    .order__steps {
-        flex-wrap: wrap;
-        margin-bottom: 0;
-    }
-
-    .order__step {
-        margin-bottom: 70px;
-    }
-
-    /* .for-you-card {
-        -webkit-flex-basis: 100%;
-        flex-basis: 100%;
-    }
-
-    .for-you-card {
-        max-width: 300px;
-    }
-
-    .for-you-card {
-        margin: 40px auto 0;
-    } */
-
-    .for-you .section-title {
-        max-width: 453px;
-    }
-
-    .for-you .wrapper {
-        max-width: 770px;
-    }
-
-    .for-you__advantage {
-        max-width: 330px;
-    }
-
-    .spending-wrap {
-        -webkit-justify-content: center;
-        justify-content: center;
-    }
-
-    .spending-card {
-        width: calc(100% - 30px);
-        margin-bottom: 30px;
     }
 
     .garant-wrap {
@@ -3654,6 +3620,10 @@ a {
         justify-content: center;
     }
 
+    .offer {
+        padding: 0;
+    }
+
     .reasons .wrapper {
         padding: 55px 35px;
     }
@@ -3671,6 +3641,12 @@ a {
 
     .reason-card:not(:last-child) {
         margin-bottom: 55px;
+    }
+
+    .calc-popupFirst,
+    .calc-popupSecond,
+    .calc-popupFinal {
+        max-width: calc(100% - 30px);
     }
 
     .shop__title {
@@ -3727,8 +3703,13 @@ a {
         margin-bottom: 140px;
     }
 
+    .comments-slider-item {
+        padding: 0;
+    }
+
     .comments-slider-arrow {
-        top: -54px;
+        bottom: -19px;
+        top: initial;
     }
 
     .comments-slider-arrow-prev {
@@ -3737,6 +3718,18 @@ a {
 
     .comments-slider-arrow-next {
         right: 14px;
+    }
+
+    .comments-card {
+        min-height: 587px;
+    }
+
+    .comments-card__author {
+        margin-bottom: 30px;
+    }
+
+    .comments-card__review {
+        font-size: 16px;
     }
 
     .simple__stage-name {
@@ -3752,7 +3745,8 @@ a {
         margin: 0 auto 40px;
     }
 
-    .quiz-card {
+    .quiz-card,
+    .quiz-answer {
         padding: 50px 30px;
     }
 
@@ -3800,6 +3794,10 @@ a {
 
     .header__advantages-text {
         max-width: 120px;
+    }
+
+    .comments-card {
+        min-height: 675px;
     }
 
     .shop__devices,
@@ -3908,6 +3906,15 @@ a {
         margin-bottom: 25px;
     }
 
+    .quiz-answer {
+        padding: 127px 30px;
+    }
+
+    .quiz-answer__title,
+    .calc-popup__title {
+        font-size: 20px;
+    }
+
     .spending-card {
         width: 100%;
     }
@@ -3924,6 +3931,11 @@ a {
         padding: 14px 15px;
         width: 130px;
     }
+
+    .offer .btn,
+    .quiz .btn {
+        padding: 16px 0;
+    }
 }
 
 @media (max-width: 320px) {
@@ -3934,6 +3946,10 @@ a {
 
     .features .section-title {
         max-width: 258px;
+    }
+
+    .comments-card {
+        min-height: 807px;
     }
 }
 
