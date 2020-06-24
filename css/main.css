@@ -3936,6 +3936,10 @@ a {
     .quiz .btn {
         padding: 16px 0;
     }
+
+    .calc-popup__res {
+        font-size: 28px;
+    }
 }
 
 @media (max-width: 320px) {
