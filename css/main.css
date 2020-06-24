@@ -272,6 +272,7 @@ a {
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
+    background: transparent;
 }
 
 .button__contact:hover {
@@ -2948,6 +2949,25 @@ a {
         order: 1;
     }
 
+    .footer-wrap {
+        grid-template-areas: "a b d e""c c c c";
+        grid-gap: 20px;
+        justify-items: center;
+    }
+
+    .footer__logo img {
+        width: 114px;
+    }
+
+    .footer__icon {
+        margin: 15px 10px;
+    }
+
+    .name {
+        max-width: 600px;
+        text-align: center;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -3504,25 +3524,6 @@ a {
 
     .form-btn {
         display: block;
-    }
-
-    .footer-wrap {
-        grid-template-areas: "a b d e""c c c c";
-        grid-gap: 20px;
-        justify-items: center;
-    }
-
-    .footer__logo img {
-        width: 114px;
-    }
-
-    .footer__icon {
-        margin: 15px 10px;
-    }
-
-    .name {
-        max-width: 600px;
-        text-align: center;
     }
 
     .redirect-popup__wrap {
