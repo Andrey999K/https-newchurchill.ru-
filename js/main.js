@@ -5,6 +5,7 @@ $(document).ready(function () {
     const header__close = document.querySelector(".header__close");
     let nav_link = document.querySelectorAll(".nav__list-item-link");
     const try__form = document.querySelector(".try__form");
+    const button__contact = document.querySelector(".button__contact");
 
     nav_link.forEach(item => {
         item.addEventListener("click", element => {
@@ -12,12 +13,13 @@ $(document).ready(function () {
         });
     });
 
-    //ОТПРАВКА ФОРМЫ НА ПОЧТУ БЕЗ ПЕРЕЗАГРУЗКИ СТРАНИЦЫ
-    // try__form.addEventListener("submit", () => {
-    //     event.preventDefault();
-    // });
+    button__contact.addEventListener("click", item => {
+        header__menu.classList.remove("active");
+    });
 
-    // $('input[name="phone"]').mask("+7 (999) 999-99-99");
+    console.log($('input[name="phone"]'));
+
+    $('input[name="phone"]').mask("+7 (999) 999-99-99");
 
     //ОТКРЫТИЕ МЕНЮ
     menu.addEventListener("click", item => {
