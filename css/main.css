@@ -185,16 +185,6 @@ a {
     letter-spacing: 0.6px;
 }
 
-/* 
-.header {
-  padding-top: 50px;
-  background: url(../img/main_img.svg) no-repeat fixed center top;
-  padding-bottom: 75px;
-  background-size: cover;
-  position: relative;
-  z-index: 30;
-} */
-
 .header {
     height: 800px;
     background: url(../img/main_img.jpg) no-repeat fixed center top;
