@@ -796,7 +796,6 @@ a {
     cursor: pointer;
     display: block;
     width: 200px;
-    margin: 20px auto 0;
     padding: 10px 0;
 }
 
@@ -2720,10 +2719,10 @@ a {
 
 .request-popup {
     z-index: 10000;
-    background: #eaeaea;
-    width: 620px;
-    max-width: 100%;
-    height: 300px;
+    background: #FFFFFF;
+    width: 100%;
+    height: 400px;
+    max-width: 570px;
     margin: 0 auto;
     position: fixed;
     top: 50%;
@@ -2731,7 +2730,8 @@ a {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    padding: 20px 60px;
+    padding: 60px 110px;
+    border-radius: 8px;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2755,10 +2755,12 @@ a {
 }
 
 .request-popup__title {
-    font-weight: 700;
-    font-size: 2.3vh;
-    text-transform: uppercase;
-    padding-top: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    max-width: 350px;
+    text-align: center;
+    color: #000000;
 }
 
 #no18 {
@@ -2766,19 +2768,13 @@ a {
 }
 
 .request-popup__description {
-    font-size: 2.6vh;
-    text-transform: uppercase;
-
-}
-
-#yes {
-    margin: 0;
-
-}
-
-#no {
-    margin: 0;
-    margin-bottom: 20px;
+    font-size: 24px;
+    color: #000000;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    font-weight: 400;
+    line-height: 120%;
 }
 
 .request-popup__icon {
