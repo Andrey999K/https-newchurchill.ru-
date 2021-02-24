@@ -208,7 +208,9 @@ a {
     position: fixed;
     top: 0;
     left: -484px;
-    width: 484px;
+    /* width: 484px; */
+    width: 100%;
+    max-width: 484px;
     height: 100vh;
     max-height: 800px;
     display: -webkit-box;
@@ -239,13 +241,6 @@ a {
 
 .header__close:hover {
     cursor: pointer;
-}
-
-.active {
-    left: -40px;
-    -webkit-transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    -o-transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .header__logo {
@@ -4071,6 +4066,17 @@ a {
 
 @media (max-width: 500px) {
 
+    .request-popup {
+        padding: 60px 30px;
+    }
+
+    .header__menu {
+        width: calc(100vw + 40px);
+        max-width: calc(100vw + 40px);
+        left: calc(-100vw - 40px);
+        padding: 40px 60px 40px 90px;
+    }
+
     .header__advantages-text {
         max-width: 120px;
     }
@@ -4351,4 +4357,11 @@ a {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+}
+
+.active {
+    left: -40px;
+    -webkit-transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
